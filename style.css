@@ -10,6 +10,7 @@
 
 body{
      width: 100%;
+     position: relative;
 }
 
 .align-size{
@@ -131,6 +132,11 @@ button:last-child:hover{
 @media only screen and (max-width: 768px) {
      button{
           width: 100%;
-          margin-bottom: 15px;
+          margin: 0;
+          margin-bottom: 20px;
+     }
+     .align-size{
+          width: 100%;
+          margin-bottom: 30px;
      }
 }
