@@ -20,6 +20,32 @@
                <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
           </div>
 
+          <div class="option-wrapper">
+               <div class="option">
+                    <input type="radio">
+                    <label>Uppercase Letters</label>
+               </div>
+
+               <div class="option">
+                    <input type="radio">
+                    <label>Lowercase Letters</label>
+               </div>
+
+               <div class="option">
+                    <input type="radio">
+                    <label>Special Characters</label>
+               </div>
+
+               <div class="option">
+                    <input type="radio">
+                    <label>Numbers</label>
+               </div>
+          </div>
+
+          <div class="slidecontainer">
+               <input type="range" min="8" max="128" value="8" class="slider" id="myRange">
+          </div>
+
           <div class="btn-wrapper">
                <button id="generate">Generate Password</button>
                <button id="copy">Copy to Clipboard</button>
