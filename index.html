@@ -8,6 +8,7 @@
           <title>Password Generator</title>
 
           <link rel="stylesheet" type="text/css" href="style.css">
+          <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
      </head>
 
      <body>
@@ -15,39 +16,48 @@
                <h1>Password Generator</h1>
           </header>
 
-          <h2>Generate a Password</h2>
-          <div class="textArea">
+          <div class="head">
+               <h2>Generate a Password</h2>
+          </div>
+
+          <div class="textArea align-size">
                <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
           </div>
 
-          <div class="option-wrapper">
+          <div class="option-wrapper align-size">
+               <hr>
                <div class="option">
-                    <input type="radio">
-                    <label>Uppercase Letters</label>
+                    <input id="uppercase" type="checkbox">
+                    <label for="uppercase">Uppercase Letters</label>
                </div>
 
+               <hr>
                <div class="option">
-                    <input type="radio">
-                    <label>Lowercase Letters</label>
+                    <input id="lowercase" type="checkbox">
+                    <label for="lowercase">Lowercase Letters</label>
                </div>
 
+               <hr>
                <div class="option">
-                    <input type="radio">
-                    <label>Special Characters</label>
+                    <input id="sp-char" type="checkbox">
+                    <label for="sp-char">Special Characters</label>
                </div>
 
+               <hr>
                <div class="option">
-                    <input type="radio">
-                    <label>Numbers</label>
+                    <input id="num" type="checkbox">
+                    <label for="num">Numbers</label>
                </div>
+               <hr>
           </div>
 
-          <div class="slidecontainer">
-               <input type="range" min="8" max="128" value="8" class="slider" id="myRange">
+          <div class="slidecontainer align-size">
+               <p>Password Length: <span id="demo"></span></p>
+               <input type="range" min="8" max="128" value="8" class="slider" id="range">
           </div>
 
-          <div class="btn-wrapper">
-               <button id="generate">Generate Password</button>
+          <div class="btn-wrapper align-size">
+               <button id="generate" onclick="">Generate Password</button>
                <button id="copy">Copy to Clipboard</button>
           </div>
 
