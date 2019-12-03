@@ -73,3 +73,12 @@ generateBtn.addEventListener("click", writePassword);
 
 // BONUS EVENT LISTENER
 copyBtn.addEventListener("click", copyToClipboard);
+
+//my CODE
+var slider = document.getElementById("range");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
