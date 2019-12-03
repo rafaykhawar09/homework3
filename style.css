@@ -5,40 +5,53 @@
      font-family: 'Righteous', cursive;
      background: black;
      color: white;
+     font-size: 20px;
 }
 
 body{
      width: 100%;
 }
 
-header, .head, .align-size{
+.align-size{
      width: 40%;
      margin: auto;
-     margin-bottom: 15px;
-}
-
-.align-size{
      margin-bottom: 30px;
 }
 
 h1, h2{
      text-align: center;
+     margin-bottom: 15px;
 }
 h1{
      margin-top: 10px;
-     color: darkslateblue;
-     text-shadow: 0 0 5px darkslateblue;
+     color: lightseagreen;
+     text-shadow: 0 0 10px lightseagreen;
+     font-size: 50px;
 }
+h2{
+     margin-top: 10px;
+     color: mediumvioletred;
+     text-shadow: 0 0 10px mediumvioletred;
+     font-size: 35px;
+}
+
 textarea, .slidercontainer{
      width: 100%;
 }
-
 textarea{
      padding: 10px;
      height: 200px;
      resize: none;
+     border: 1px solid white;
      border-radius: 5px;
      font-size: 20px;
+     outline: none;
+     color: black;
+     background-image: linear-gradient(to right, lightseagreen, mediumvioletred);
+}
+::placeholder{
+     color: white;
+     opacity: 0.5;
 }
 
 .slider{
@@ -65,7 +78,6 @@ textarea{
      background: white;
      cursor: pointer;
 }
-
 .slider::-moz-range-thumb {
      width: 25px;
      height: 25px;
